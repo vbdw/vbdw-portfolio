@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import SignupForm from './auth/SignupForm';
+import Login from './auth/Login';
+import { BrowserRouter, Routes } from 'react-router-dom';
+import Aouth from './auth/Aouth';
+import Components from './component/Components';
+import io from 'socket.io-client';
+
+
 
 function App() {
+  const [data, setData] = useState([]);
+  const [session, setSession] = useState(null)
+  
+  useEffect(() => {
+    setSession(localStorage.getItem('session'))
+    console.log(session)
+  }, [session]);
+
+  // Check if data is an array before using map
+  if (!Array.isArray(data)) {
+    return <p>Loading...</p>;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {
+        session ? (
+          <Components/>
+        ) : (
+          <Aouth/>
+        )
+      }
+      
+    </BrowserRouter>
   );
 }
 
