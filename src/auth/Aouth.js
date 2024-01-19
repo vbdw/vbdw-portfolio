@@ -6,8 +6,8 @@ import SignupForm from "./SignupForm";
 export default function Aouth () {
     return(
         <Routes>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/' element={<SignupForm/>}/>
+            <Route path='/' element={<Login/>}/>
+            <Route path='/signup' element={<SignupForm/>}/>
         </Routes>
     )
 }

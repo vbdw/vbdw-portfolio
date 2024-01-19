@@ -31,40 +31,45 @@ const SignupForm = () => {
 
   return (
     <div className='container'>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <h2>Signup</h2>
-        </div>
-          <div className='npt'>
-            <div>
-              <label>Email:</label>
-            </div>
-            
-            <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-          </div>
-          <div className='npt'>
-            <div>
-              <label>Password:</label>
-            </div>
-            
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          
-        
-        <div className='submit'>
-          <button type="submit">Sign Up</button>
-        </div>
-        
-        <div className='linkContainer'>
-            <Link className='link'  to={'/login'}>Login</Link>
-        </div>
-      </form>
+      <div className='container3'>
+          <form onSubmit={handleSubmit}>
+              <div className='formContainer'>
+                  <div className='npt2'>
+                      <div className='email'>
+                          <div>
+                          <label>Email:</label>
+                          </div>
+                          <input type="email" placeholder='name@host.com' name="email" value={formData.email} onChange={handleChange} />
+                      </div>
+                      <div className='email'>
+                          <div>
+                              <label>Password:</label>
+                          </div>
+                          <input
+                              placeholder='*****'
+                              type="password"
+                              name="password"
+                              value={formData.password}
+                              onChange={handleChange}
+                          />
+                      </div>
+                      
+                      <div className='submit'>
+                          <button className='button' type="submit">Sign Up</button>
+                      </div>
+                      <div className='linkContainer'>
+                          <Link className='link' to={'/'}>Already have an account? Sign In</Link>
+                      </div>
+                      <div style={{ height: '20vh' }}></div>
+                  </div>
+                  <div className='contact'>
+                      <Link className='link' to={'#'}>Terms of Services</Link>
+                      <Link className='link' to={'#'}>Contact us</Link>
+                  </div>
+              </div>
+          </form>
+      </div>
+    
     </div>
   );
 };

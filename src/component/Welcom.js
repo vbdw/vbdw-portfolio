@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -24,14 +24,18 @@ export default function Welcom () {
     
     // Usage
     useEffect(() => {
-        getUserDataByEmail(JSON.parse(session).email);
-        if(data){
-            if(data.loginNumber > 1){
-                alert('Someone is using your account')
-                logout()
+        const userEmail = JSON.parse(session)?.email;
+        if (userEmail) {
+            getUserDataByEmail(userEmail);
+            if (data) {
+                if (data.loginNumber > 1) {
+                    alert('Someone is using your account');
+                    logout();
+                }
             }
         }
-    }, [data])
+    }, [data, session]);
+    
 
     const logout =async () => {
         try {
@@ -44,11 +48,20 @@ export default function Welcom () {
         }
     }
     return (
-        <div>
-            <h1>
-                Welcome
-            </h1>
-                <button onClick={logout}>logout</button>
+        <div className="container">
+            <div className='container4'>
+                <form onSubmit={logout}>
+                    <div className='formContainer'>
+                        <div className="npt2">
+                            <button className="button">logout</button>
+                        </div>
+                        <div className='contact'>
+                            <Link className='link' to={'#'}>Terms of Services</Link>
+                            <Link className='link' to={'#'}>Contact us</Link>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }
