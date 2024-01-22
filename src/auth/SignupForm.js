@@ -21,9 +21,8 @@ const SignupForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:1010/signup', formData);
-
       console.log(response.data);
-      navigate('/login')
+      navigate('/')
     } catch (error) {
       console.error('Signup failed:', error.response.data);
     }

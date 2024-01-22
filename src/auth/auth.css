@@ -141,6 +141,7 @@ label,b{
 }
 
 .container2,.container3,.container4{
+    background: url('../../public/bg.jpg');
     background-size: cover;
     width: 95vw;
     height: 95vh;
@@ -148,9 +149,6 @@ label,b{
     box-shadow:  0px 5px 20px rgba(142, 136, 138, 0.6);
 }
 
-.container2{
-    background: url('../../public/bg.jpg');
-}
 
 .container3{
     background: url('../../public/bg2.jpg');
