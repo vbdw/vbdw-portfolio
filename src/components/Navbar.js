@@ -35,7 +35,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/">
         <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                ABDO
+                v_bd_w
               </Nav.Link>
           {/* <img src={logo} className="img-fluid logo" alt="brand" />  */}
         </Navbar.Brand>
