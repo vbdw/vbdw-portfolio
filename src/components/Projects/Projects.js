@@ -23,6 +23,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              type="app/web"
               imgPath={k_customer}
               isBlog={false}
               title="Kooballo Customer"
@@ -30,11 +31,13 @@ function Projects() {
               ghLink="https://github.com/CML-Global/kooballo"
               app="https://apps.apple.com/us/app/kooballo/id6475052562"
               play="https://play.google.com/store/apps/details?id=com.v_bd_w.kooballo"
+              demoLink="https://kooballo.ma"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
+              type="app"
               imgPath={k_driver}
               isBlog={false}
               title="Kooballo Driver"
@@ -47,6 +50,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              type="app"
               imgPath={k_pay}
               isBlog={false}
               title="Kooballo Pay"
@@ -59,6 +63,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              type="app/web"
               imgPath={w_Custumer}
               isBlog={false}
               title="Washaaa! Customer"
@@ -66,11 +71,13 @@ function Projects() {
               ghLink="https://github.com/CML-Global/washaa-mobile"
               app="https://apps.apple.com/us/app/washaaa-customer/id6498149621"
               play="https://play.google.com/store/apps/details?id=com.washaa.customer.washaacustomer"
+              demoLink="https://washaaa.com"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
+              type="app"
               imgPath={w_Washer}
               isBlog={false}
               title="Washaaa! Washer"
@@ -83,11 +90,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              type="nc"
               imgPath={my_laayoune}
               isBlog={false}
               title="My Laayoune"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="Welcome to Camellander, the ultimate destination for all camel enthusiasts! Whether you're a seasoned camel racer, a passionate breeder, or simply fascinated by these magnificent creatures, Camellander is your one-stop platform for discovering, exploring, and participating in a diverse range of camel-related events."
               ghLink="https://github.com/CML-Global/mylaayoune"
               demoLink="https://mylaayoune.ma"
             />

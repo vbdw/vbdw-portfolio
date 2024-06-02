@@ -20,40 +20,80 @@ function ProjectCards(props) {
         </Button>
         {"\n"}
         {"\n"}
-        {!props.isBlog && props.demoLink ? (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        ) : (
-          <>
-            <Button
-              variant="primary"
-              href={props.app}
-              target="_blank"
-              style={{ marginLeft: "10px" }}
-            >
-              <FaAppStore /> &nbsp;
-              {"App Store"}
-            </Button>
-            <br/>
-            <br/>
-            <Button
-              variant="primary"
-              href={props.play}
-              target="_blank"
-              style={{ marginLeft: "10px" }}
-            >
-              <BsGooglePlay /> &nbsp;
-              {"Play Store"}
-            </Button>
-          </>
-        )}
+        { props.type === "nc"? (
+            <>
+              <br/>
+              <strong className="purple">This website not complete</strong>
+            </>
+          ) : props.type === "app/web"? (
+            <>
+              <Button
+                variant="primary"
+                href={props.app}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+              >
+                <FaAppStore /> &nbsp;
+                {"App Store"}
+              </Button>
+              <br/>
+              <br/>
+              <Button
+                variant="primary"
+                href={props.play}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+              >
+                <BsGooglePlay /> &nbsp;
+                {"Play Store"}
+              </Button>
+              <Button
+                variant="primary"
+                href={props.demoLink}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+              >
+                <CgWebsite /> &nbsp;
+                {"Demo"}
+              </Button>
+            </>
+          ) : props.type === "app"? (
+            <>
+              <Button
+                variant="primary"
+                href={props.app}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+              >
+                <FaAppStore /> &nbsp;
+                {"App Store"}
+              </Button>
+              <br/>
+              <br/>
+              <Button
+                variant="primary"
+                href={props.play}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+              >
+                <BsGooglePlay /> &nbsp;
+                {"Play Store"}
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button
+                variant="primary"
+                href={props.demoLink}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+              >
+                <CgWebsite /> &nbsp;
+                {"Demo"}
+              </Button>
+            </>
+          )
+        }
       </Card.Body>
     </Card>
   );
