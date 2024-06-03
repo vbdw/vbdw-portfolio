@@ -3,7 +3,7 @@
   <a href="https://vbdw-portfolio.vercel.app" target="_blank">vbdw.tech</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="./Images/readme-img1.jpeg" />
 </div>
 
 <br/>
