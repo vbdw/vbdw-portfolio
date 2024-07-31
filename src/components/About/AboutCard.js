@@ -12,8 +12,6 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Abderrahim Haijoub </span>
             from <span className="purple"> Sidi Ifni, Morocco.</span>
             <br />
-            I am currently employed as a software developer at <a href="https://cmlglobal.tech" target="_blank"><span className="purple"> <CgWebsite/>CML Global.</span></a>
-            <br />
             I have completed Diploma (DevWOFS) in Digital Development at ISGI Laayoune.
             <br />
             <br />

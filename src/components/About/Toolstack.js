@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiGitBranch } from "react-icons/di";
+import { DiGitBranch, DiWordpress } from "react-icons/di";
 import {
   SiVisualstudiocode,
   SiPostman,
@@ -29,6 +29,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAndroidstudio />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiWordpress />
       </Col>
     </Row>
   );
