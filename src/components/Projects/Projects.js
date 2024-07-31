@@ -8,6 +8,7 @@ import k_pay from "../../Assets/Projects/kooballo-pay.png";
 import k_customer from "../../Assets/Projects/kooballo-customer.png";
 import k_driver from "../../Assets/Projects/kooballo-driver.png";
 import my_laayoune from "../../Assets/Projects/my_laayoune.png";
+import donbuzz from "../../Assets/Projects/donbuzz.png";
 
 function Projects() {
   return (
@@ -97,6 +98,16 @@ function Projects() {
               description="Welcome to Camellander, the ultimate destination for all camel enthusiasts! Whether you're a seasoned camel racer, a passionate breeder, or simply fascinated by these magnificent creatures, Camellander is your one-stop platform for discovering, exploring, and participating in a diverse range of camel-related events."
               ghLink="https://github.com/CML-Global/mylaayoune"
               demoLink="https://mylaayoune.ma"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={donbuzz}
+              isBlog={false}
+              title="Donbuzz website"
+              description=""
+              ghLink="https://github.com/vbdw"
+              demoLink="https://donbuzz.com"
             />
           </Col>
         </Row>
