@@ -9,6 +9,8 @@ import k_customer from "../../Assets/Projects/kooballo-customer.png";
 import k_driver from "../../Assets/Projects/kooballo-driver.png";
 import my_laayoune from "../../Assets/Projects/my_laayoune.png";
 import donbuzz from "../../Assets/Projects/donbuzz.png";
+import directory1 from '../../Assets/Projects/experiencemarriott.svg';
+import directory2 from '../../Assets/Projects/pools-co-za-logo.webp'
 
 function Projects() {
   return (
@@ -59,6 +61,28 @@ function Projects() {
               ghLink="https://github.com/CML-Global/kooballo"
               app="https://apps.apple.com/us/app/kooballo-pay/id6477578724"
               play="https://play.google.com/store/apps/details?id=com.v_bd_w.KooballoPay"            
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={directory2}
+              isBlog={false}
+              title="pools"
+              description="The Preferred Directory for ALL your Pool, Spa, Sauna, Jacuzzi and Hot Tub Related Service Providers in Southern Africa!"
+              ghLink="https://github.com/vbdw"
+              demoLink="https://pools.co.za"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={directory1}
+              isBlog={false}
+              title="experience marriott"
+              description="Click here to find the best package for the perfect escape from reality and a relaxing time with our Hotel and Spa deals! Visit our website to learn more."
+              ghLink="https://github.com/vbdw"
+              demoLink="https://experiencemarriott.com"         
             />
           </Col>
 
