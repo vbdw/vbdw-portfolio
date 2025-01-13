@@ -7,6 +7,7 @@ import {
   SiVercel,
   SiMongodb,
   SiAndroidstudio,
+  SiIntellijidea,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -32,6 +33,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiWordpress />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiIntellijidea />
       </Col>
     </Row>
   );

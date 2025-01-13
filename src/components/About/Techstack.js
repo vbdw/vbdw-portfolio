@@ -10,6 +10,7 @@ import {
   DiPhp,
   DiLaravel,
   DiDjango,
+  DiJava,
 } from "react-icons/di";
 import { FaAppStore, FaGooglePlay } from "react-icons/fa";
 import {
@@ -17,6 +18,8 @@ import {
   SiNextdotjs,
   SiExpress,
   SiSupabase,
+  SiSpringboot,
+  SiFlutter,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -33,16 +36,28 @@ function Techstack() {
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <DiJava />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <TbBrandReactNative />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiLaravel />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiDjango />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSpringboot />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiExpress />
@@ -52,9 +67,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSupabase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandReactNative />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
