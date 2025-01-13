@@ -10,7 +10,8 @@ import k_driver from "../../Assets/Projects/kooballo-driver.png";
 import my_laayoune from "../../Assets/Projects/my_laayoune.png";
 import donbuzz from "../../Assets/Projects/donbuzz.png";
 import directory1 from '../../Assets/Projects/experiencemarriott.svg';
-import directory2 from '../../Assets/Projects/pools-co-za-logo.webp'
+import directory2 from '../../Assets/Projects/pools-co-za-logo.webp';
+import camelendar from '../../Assets/Projects/logo.svg';
 
 function Projects() {
   return (
@@ -61,6 +62,17 @@ function Projects() {
               ghLink="https://github.com/CML-Global/kooballo"
               app="https://apps.apple.com/us/app/kooballo-pay/id6477578724"
               play="https://play.google.com/store/apps/details?id=com.v_bd_w.KooballoPay"            
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={camelendar}
+              isBlog={false}
+              title="Camelendar.com"
+              description="Built with Next.js and Spring Boot, this dynamic platform is the ultimate guide for camelid enthusiasts. It empowers users to share activities, events, and books about camelids with a global audience. The site combines the speed and responsiveness of Next.js with the robust backend capabilities of Spring Boot, delivering a seamless user experience. Whether you're an organizer, author, or hobbyist, this platform fosters a vibrant community centered around the fascinating world of camelids."
+              ghLink="https://github.com/vbdw"
+              demoLink="https://pools.co.za"
             />
           </Col>
 
@@ -119,7 +131,7 @@ function Projects() {
               imgPath={my_laayoune}
               isBlog={false}
               title="My Laayoune"
-              description="Welcome to Camellander, the ultimate destination for all camel enthusiasts! Whether you're a seasoned camel racer, a passionate breeder, or simply fascinated by these magnificent creatures, Camellander is your one-stop platform for discovering, exploring, and participating in a diverse range of camel-related events."
+              description="A directory website built with Next.js and Express.js, enabling users to share and discover various projects such as gyms, pharmacies, hotels, and more. The platform provides a user-friendly interface for showcasing local businesses and services, promoting connectivity within the community. Designed to be fast, responsive, and scalable, the website leverages modern web technologies to deliver a seamless user experience."
               ghLink="https://github.com/CML-Global/mylaayoune"
               demoLink="https://mylaayoune.ma"
             />
