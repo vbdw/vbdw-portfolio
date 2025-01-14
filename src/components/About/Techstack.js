@@ -74,15 +74,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaGooglePlay/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FaAppStore />
-      </Col>
     </Row>
   );
 }
