@@ -6,7 +6,8 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 function Home2() {
   return (
@@ -65,12 +66,22 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/vbdw"
+                  href="https://wa.me/+212658729968"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <FaWhatsapp />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:abdrrahimhaijoub@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiGmail />
                 </a>
               </li>
               <li className="social-icons">
