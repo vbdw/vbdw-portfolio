@@ -12,9 +12,7 @@ import {
   DiDjango,
   DiJava,
 } from "react-icons/di";
-import { FaAppStore, FaGooglePlay } from "react-icons/fa";
 import {
-  SiFirebase,
   SiNextdotjs,
   SiExpress,
   SiSupabase,

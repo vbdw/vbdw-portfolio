@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { BsGit } from "react-icons/bs";
 import { DiGitBranch, DiWordpress } from "react-icons/di";
 import {
   SiVisualstudiocode,

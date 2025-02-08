@@ -72,7 +72,7 @@ function Projects() {
               title="Camelendar.com"
               description="Built with Next.js and Spring Boot, this dynamic platform is the ultimate guide for camelid enthusiasts. It empowers users to share activities, events, and books about camelids with a global audience. The site combines the speed and responsiveness of Next.js with the robust backend capabilities of Spring Boot, delivering a seamless user experience. Whether you're an organizer, author, or hobbyist, this platform fosters a vibrant community centered around the fascinating world of camelids."
               ghLink="https://github.com/vbdw"
-              demoLink="https://pools.co.za"
+              demoLink="https://www.camelendar.com"
             />
           </Col>
 
