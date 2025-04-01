@@ -1,0 +1,139 @@
+.project-container{
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+.my-projects{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card-container {
+    width: 1200px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #c770f0 1px;
+    box-shadow: 0 0 6px 2px #c770f0;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card-container:hover{
+    transform: translateX(50px);
+}
+
+.project-img-container{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f02a289;
+    border-radius: 20px 0 0 20px;
+}
+
+.project-card-image{
+    width: 200px;
+    height: 200px;
+}
+
+.project-card-info{
+    width: 650px;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.project-card-title{
+    text-align: left;
+    color: #c770f0;
+}
+
+.project-card-descrition{
+    text-align: left;
+    color: #fff;
+}
+
+.project-card-links{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project-card-link{
+    text-decoration: none;
+    color: #fff;
+    background-color: #c770f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    .project-container{
+        padding-left: 0;
+    }
+
+    .my-projects{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-card-container {
+        width: 80%;
+        height: 700px;
+        flex-direction: column;
+    }
+    
+    .project-card-container:hover{
+        transform: scale(1.02);
+    }
+    
+    .project-img-container{
+        width: 100%;
+        height: 300px;
+        background-color: #6f02a289;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .project-card-info{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .project-card-title{
+        text-align: left;
+        color: #c770f0;
+    }
+    
+    .project-card-links{
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project-card-link{
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
